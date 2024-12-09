@@ -1,4 +1,4 @@
-﻿namespace Task.Models
+﻿namespace Tasks.Models
 {
     public class LoginViewModel
     {

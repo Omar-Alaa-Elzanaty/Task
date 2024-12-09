@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Task.Constants;
-using Task.Domains;
+using Tasks.Constants;
+using Tasks.Domains;
 
-namespace Task.Context
+namespace Tasks.Context
 {
     public static class Seeding
     {

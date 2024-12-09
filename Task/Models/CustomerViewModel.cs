@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Task.Models
+namespace Tasks.Models
 {
     public class CustomerViewModel
     {

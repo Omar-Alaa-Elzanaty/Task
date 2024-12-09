@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
-using Task.Domains;
+using Tasks.Domains;
 
-namespace Task.Context
+namespace Tasks.Context
 {
     public class TaskDbContext:IdentityDbContext<Customer,IdentityRole<int>,int>
     {

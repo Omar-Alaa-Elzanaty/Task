@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Task.Domains;
+using Tasks.Domains;
 
-namespace Task.Context.DomainsConfig
+namespace Tasks.Context.DomainsConfig
 {
     internal class CustomerProductConfig : IEntityTypeConfiguration<CustomerProduct>
     {

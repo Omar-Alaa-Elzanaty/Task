@@ -1,5 +1,5 @@
-using Task;
-using Task.Context;
+using Tasks;
+using Tasks.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 

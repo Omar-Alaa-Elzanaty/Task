@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Task.Context;
-using Task.Domains;
-using Task.Models;
+using Tasks.Context;
+using Tasks.Domains;
+using Tasks.Models;
 
-namespace Task.Controllers
+namespace Tasks.Controllers
 {
     public class CustomerController : Controller
     {

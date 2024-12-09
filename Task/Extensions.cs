@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Task.Context;
-using Task.Domains;
+using Tasks.Context;
+using Tasks.Domains;
 
-namespace Task
+namespace Tasks
 {
     public static class Extensions
     {

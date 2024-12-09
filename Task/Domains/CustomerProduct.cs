@@ -1,4 +1,4 @@
-﻿namespace Task.Domains
+﻿namespace Tasks.Domains
 {
     public class CustomerProduct
     {

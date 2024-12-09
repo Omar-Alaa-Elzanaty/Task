@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Task.Domains;
-using Task.Models;
+using Tasks.Domains;
+using Tasks.Models;
 
-namespace Task.Controllers
+namespace Tasks.Controllers
 {
     public class AuthController:Controller
     {

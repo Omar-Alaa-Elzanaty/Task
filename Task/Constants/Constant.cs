@@ -1,4 +1,4 @@
-﻿namespace Task.Constants
+﻿namespace Tasks.Constants
 {
     public class Constant
     {
