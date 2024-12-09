@@ -1,0 +1,49 @@
+﻿@model CustomerManagementSystem.MVC.Models.Customer.CustomerDetailsViewModel
+
+@{
+    ViewBag.Title = "Customer Details";
+}
+
+<h2>Customer Details</h2>
+
+<div>
+    <h3>Customer Information</h3>
+    <p><strong>ID:</strong> @Model.Id</p>
+    <p><strong>Code:</strong> @Model.Code</p>
+    <p><strong>Name:</strong> @Model.CustomerName</p>
+    <p><strong>Date of Registration:</strong> @Model.DateOfRegistration.ToShortDateString()</p>
+
+    <h3>Associated Products</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Products.Any())
+            {
+                foreach (var product in Model.Products)
+                {
+                    <tr>
+                        <td>@product.Id</td>
+                        <td>@product.Name</td>
+                        <td>@product.Price.ToString("C")</td> <!-- Format as currency -->
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="3">No products assigned to this customer.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<p>
+    <a asp-action="Index">Back to Customer List</a>
+</p>

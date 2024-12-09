@@ -1,0 +1,33 @@
+﻿@model CustomerManagementSystem.MVC.Models.Customer.CustomerListViewModel
+
+@{
+    ViewBag.Title = "Customers";
+}
+
+<h2>Customers</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Code</th>
+            <th>Date of Registration</th>
+            <th>Customer Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model.Customers)
+        {
+            <tr>
+                <td>@customer.Id</td>
+                <td>@customer.Code</td>
+                <td>@customer.DateOfRegistration.ToShortDateString()</td>
+                <td>@customer.CustomerName</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@customer.Id" class="btn btn-info">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
